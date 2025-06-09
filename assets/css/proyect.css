@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Contrail+One&family=Passion+One:wght@400;700;900&family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header h1 {
+    font-family: "Contrail One", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 4rem;
+    margin: 2rem;
+    background-color: grey;
+    width: 100%;
+}
+
+.proyects img {
+    width: 30rem;
+    max-width: 100%;
+    justify-self: center;
+    flex: 1;
+    transition: 0.5s ease;
+    margin: 1rem;
+}
+
+.proyects img:hover {
+    flex: 4;
+    width: 32rem;
+    
+}
+
+.proyects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-self: center;
+
+}
+
+.technologies h3{     
+    margin-top: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.technologies-pictures {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-block: 3rem;
+}
+
+.logo{
+    justify-self: center;
+    width: 6rem;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+
+@media (max-width:1080px) {
+    .proyects {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .technologies-pictures{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+}
+

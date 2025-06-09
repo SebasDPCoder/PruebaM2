@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #01040f;
+    color: #ffffff;
+    height: 100vh;
+}
+
+header {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    background-color: #222;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: gray;
+    border-radius: 10px;
+
+}
+
+.main {
+    padding: 2rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+.introduction {
+    display: flex;
+    gap: 2rem;
+    color: #fff;
+
+}
+
+.introduction img {
+    max-width: 100%;
+    width: 25rem;
+    border: solid transparent;
+    border-radius: 5% ;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.home-text {
+    margin: 5rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+
+
+@media (max-width:1600px) {
+    .home {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-text {
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        margin: 2rem;
+    }
+
+    .home img {
+        aspect-ratio: 3/3;
+    }
+}
+
+@media (max-width:1328px) and (min-width:768px){
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction img{
+        width: 25rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction img {
+        width: 25rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        
+    }
+
+    .container-planet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-planet#earth {
+        flex-direction: column;
+    }
+
+}
+
